@@ -1,18 +1,30 @@
-// Import the default values
+// NOT CURRENTLY USED - Import default values for scenarios
 import { DEFAULTS } from './rebateData.js';
 
 // This function takes user input and returns rebate results
 export function calculateRebate(input) {
-  // Read user data (use defaults if not provided)
   const {
-    PPF_fixture = 835,                // µmol/s per fixture
-    quantity = 52,                    // number of fixtures
-    PPE_baseline = DEFAULTS.PPE_BASELINE,
-    EE_watts = DEFAULTS.EE_WATTS,
-    hours = DEFAULTS.HOURS,
-    WHF = DEFAULTS.WHF,
-    rate = DEFAULTS.RATE
+    PPF_fixture,
+    quantity,
+    PPE_baseline,
+    EE_watts,
+    hours,
+    WHF,
+    rate
   } = input;
+
+  // Validate input: ensure all values are provided
+  if (
+    PPF_fixture === undefined ||
+    quantity === undefined ||
+    PPE_baseline === undefined ||
+    EE_watts === undefined ||
+    hours === undefined ||
+    WHF === undefined ||
+    rate === undefined
+  ) {
+    throw new Error('All input fields are required.');
+  }
 
   // Total PPF output
   const PPF_total = PPF_fixture * quantity;

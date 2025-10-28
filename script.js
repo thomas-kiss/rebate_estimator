@@ -1,8 +1,7 @@
-// Get references to the form and the results area
+// References to form and results area
 const form = document.getElementById('calcForm');
 const resultsDiv = document.getElementById('results');
 
-// When the form is submitted, stop the page from reloading
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -17,7 +16,7 @@ form.addEventListener('submit', async (e) => {
     rate: parseFloat(document.getElementById('rate').value)
   };
 
-  // Send this data to your backend API
+  // Send data to backend API
   const res = await fetch('https://rebate-estimator.onrender.com/api/rebate/calculate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -27,7 +26,7 @@ form.addEventListener('submit', async (e) => {
   // Read the JSON response
   const result = await res.json();
 
-  // Display results on the page
+  // Display results
   resultsDiv.innerHTML = `
     <h3>Results</h3>
     <p><strong>PPF Total:</strong> ${result.PPF_total}</p>
