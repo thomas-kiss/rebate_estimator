@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grow Light Rebate Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Grow Light Rebate Calculator</h1>
+
+  <!-- The calculator form -->
+  <form id="calcForm">
+    <label>PPF (fixture, µmol/s): <input type="number" id="ppf" value="835"></label>
+    <label>Quantity: <input type="number" id="qty" value="52"></label>
+    <label>PPE Baseline (µmol/J): <input type="number" id="ppe" value="1.6" step="0.01"></label>
+    <label>Watts per Fixture: <input type="number" id="watts" value="340"></label>
+    <label>Hours per Year: <input type="number" id="hours" value="4380"></label>
+    <label>WHF: <input type="number" id="whf" value="0.29" step="0.01"></label>
+    <label>Incentive Rate ($/kWh): <input type="number" id="rate" value="0.20" step="0.01"></label>
+    <button type="submit">Calculate</button>
+  </form>
+
+  <!-- Where results will show -->
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
