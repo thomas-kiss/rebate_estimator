@@ -18,7 +18,7 @@ form.addEventListener('submit', async (e) => {
   };
 
   // Send this data to your backend API
-  const res = await fetch('https://rebate-estimator.onrender.com', {
+  const res = await fetch('https://rebate-estimator.onrender.com/api/rebate/calculate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
