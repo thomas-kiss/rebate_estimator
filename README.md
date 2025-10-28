@@ -6,7 +6,8 @@ A full-stack web application that estimates energy savings and incentives for gr
 
 ## Features
 
-- **Rebate calculation uses the process-equivalent method** to provide accurate energy savings and incentives.  
+- **Rebate calculation uses the process-equivalent method** to provide accurate energy savings and incentives. 
+![Formula Screenshot](formula.png) 
 - Fully client-server architecture: frontend hosted on GitHub Pages, backend hosted on Render.  
 - Interactive form with live results display.  
 - Ready for future expansion to include utility-specific default values.
