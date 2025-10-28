@@ -1,6 +1,6 @@
 # Grow Light Rebate Calculator
 
-A full-stack web application that estimates energy savings and incentives for grow light installations. Users can input fixture and energy details to calculate total PPF, kWh savings, and incentive amounts.
+A full-stack web application that estimates energy savings and incentives for grow light installations. Users can input fixture and energy details to calculate kWh savings and incentive amounts.
 
 ---
 
