@@ -8,9 +8,7 @@ A full-stack web application that estimates energy savings and incentives for gr
 
 - **Rebate calculation uses the process input equivalent method (PIEM)** to provide accurate energy savings and incentives. 
 ![Formula Screenshot](formula.png) 
-- Fully client-server architecture: frontend hosted on GitHub Pages, backend hosted on Render.  
-- Interactive form with live results display.  
-- Ready for future expansion to include utility-specific default values.
+- Client-server architecture: frontend hosted on GitHub Pages, backend hosted on Render.   
 
 ---
 
@@ -48,13 +46,6 @@ A full-stack web application that estimates energy savings and incentives for gr
 
 ![Calculator Screenshot](screenshot.png)
 
----
-
-## Future Enhancements
-
-- Add default values for multiple utility programs.  
-- Add user-friendly error handling and input validation.  
-- Improve styling and mobile responsiveness.
 
 ---
 
